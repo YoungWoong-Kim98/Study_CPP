@@ -15,19 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="0206_1.cpp">
+    <ClCompile Include="0208_1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="0206_EX1.cpp">
+    <ClCompile Include="0208_EX1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="vector.cpp">
+    <ClCompile Include="0208_2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="0206_EX2.cpp">
+    <ClCompile Include="0208_EX2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="0206_EX3.cpp">
+    <ClCompile Include="0208_EX3.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

@@ -55,12 +55,15 @@ int main() {
 	delete p;
 	*/
 	/////////////////////////////////////////////////////////////////////////////
+	/*
 	// 2차원 동적 배열
 	//num을 받아서 num x num 배열
 	int num;
 	std::cin >> num;
 	int** num_arr = new int* [num];
-	for (int i = 0; i < num; i++) { //크기 지정
+
+	//크기 지정
+	for (int i = 0; i < num; i++) { 
 		num_arr[i] = new int[num];
 	}
 	//{ { 1, 2 },{ 2, 4 } }
@@ -73,6 +76,13 @@ int main() {
 		std::cout << std::endl;
 	}
 
+	// 배열 해제
+	for (int i = 0; i < num; i++) {
+		delete[]num_arr[i]; //안쪽
+	}
+	delete[] num_arr; // 바깥
+	*/
+	/////////////////////////////////////////////////////////////////////////////
 
 	return 0;
 }

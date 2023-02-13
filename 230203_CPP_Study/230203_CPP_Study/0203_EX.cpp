@@ -7,6 +7,7 @@ int main() {
 	for (int i = 0; i < 5; i++) {
 		std::cout << city[i] << std::endl;
 	}*/
+
 	double j = 0;
 	int grade[5];
 	for (int i = 0; i < 5; i++) {

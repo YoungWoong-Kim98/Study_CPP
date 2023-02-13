@@ -1,64 +1,66 @@
-/*
+
 #include <iostream>
 #include <string>
 
-//int main() {
-//	if (5 > 3) {
-//		std::cout << "얍\n";
-//	}
+int main() {
+	if (5 > 3) {
+		std::cout << "얍\n";
+	}
 
-	//int a;
-	//std::cin >> a;
-	//std::cout << std::endl;
-	//if (a < 10) {
-	// 
-	//	std::cout << "입력한 수가 10보다 큽니다.";
-	//}
-	//else if (a == 10) {
-	//	std::cout << "10을 입력하셨군요!";
-	//}
-	//else {
-	//	std::cout << "입력한 수가 10보다 큽니다.";
-	//}
-	//
-//int main() {
-//    (a > 100 || a < 0) {
-//		std::cout << "입력값이 잘못되었습니다.\n";
-//	}
-//	else if (a >= 90) {
-//		std::cout << "A";
-//	}
-//	else if (a >= 80) {
-//		std::cout << "B";
-//	}
-//	else if (a >= 70) {
-//		std::cout << "C";
-//	}
-//	else if (a >= 60) {
-//		std::cout << "D";
-//	}
-//	else {
-//		std::cout << "F.";
-//	}
-//	std::cout << std::endl;
+	int a;
+	std::cin >> a;
+	std::cout << std::endl;
+	if (a < 10) {
+
+		std::cout << "입력한 수가 10보다 큽니다.";
+	}
+	else if (a == 10) {
+		std::cout << "10을 입력하셨군요!";
+	}
+	else {
+		std::cout << "입력한 수가 10보다 큽니다.";
+	}
+}
+	
+	int main() {
+		if (a > 100 || a < 0) {
+			std::cout << "입력값이 잘못되었습니다.\n";
+		}
+		else if (a >= 90) {
+			std::cout << "A";
+		}
+		else if (a >= 80) {
+			std::cout << "B";
+		}
+		else if (a >= 70) {
+			std::cout << "C";
+		}
+		else if (a >= 60) {
+			std::cout << "D";
+		}
+		else {
+			std::cout << "F.";
+		}
+		std::cout << std::endl;
+	}
 
 	//중첩된 if문
 int main() {
-	//std::string userld, userPw;
-	//std::string inputld = "user01", inputPw = "1234";
-	//std::cout << "아이디를 입력해주세요.";
-	//std::cin >> userld;
-	//std::cout << "비밀번호를 입력해주세요.";
-	//std::cin >> userPw;
+	std::string userld, userPw;
+	std::string inputld = "user01", inputPw = "1234";
+	std::cout << "아이디를 입력해주세요.";
+	std::cin >> userld;
+	std::cout << "비밀번호를 입력해주세요.";
+	std::cin >> userPw;
 
-	//if (userld == inputld) {
-	//	if (userPw == inputPw) {
-	//		std::cout << "로그인 성공!!!\n";
-	//	}
-	//	else {
-	//		std::cout << "비밀번호가 틀렸습니다.\n로그인 실패!!\n";
-	//	}
-	//}
+	if (userld == inputld) {
+		if (userPw == inputPw) {
+			std::cout << "로그인 성공!!!\n";
+		}
+		else {
+			std::cout << "비밀번호가 틀렸습니다.\n로그인 실패!!\n";
+		}
+	}
 
 	//switch문
 	int a;
@@ -127,4 +129,3 @@ int main() {
 	}
 	(a % 2 == 1) ? std::cout << "홀수" : std::cout << "짝수";
 }
-*/

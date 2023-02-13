@@ -4,8 +4,6 @@ int main() {
 	int a;
 	int b;
 	char c;
-	std::cout << "------실습4------";
-	std::cout << std::endl;
 	std::cout << "연산할 정수 두 개를 입력해 주세요.";
 	std::cin >> a >> b;
 	std::cout << "연산자를 입력해주세요. (+ - * /)";
@@ -24,4 +22,5 @@ int main() {
 	}
 	else
 		std::cout << "잘못입력하셨습니다.";
+	return 0;
 }

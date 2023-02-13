@@ -1,4 +1,3 @@
-/*
 #include <iostream>
 #include <string>
 int main() {
@@ -35,6 +34,5 @@ int main() {
 	std::cout << (true || false) << std::endl; //true
 	std::cout << (true || true) << std::endl; //true
 	std::cout << ((2 > 1 && -2 < 1) || 5 > 2) << std::endl; //true
-
+	return 0;
 }
-*/

@@ -4,68 +4,78 @@
 using namespace std;
 class Snack {
 protected:
-	
-	int expense;
+	string name;
+	static int count;
 public:
-	string taste, form, name, company;
-	static string get_name() {
-		return 0;
+	Snack() {
+		count++;
 	}
-	string get_taste() {
-		return taste;
+	static int get_count() {
+		return count;
 	}
-	string get_form() {
-		return form;
+	virtual void show_info() {
+		cout << name << endl;
 	}
-
 };
 
+int Snack::count = 0;
+
 class Candy : public Snack {
+    string taste;
 public:
-	string input;
-	Candy() {}
-	void set_taste() {
-		cout << "맛을 입력하세요.";
-		cin >> input;
+	Candy(string taste) {
+		this->taste = taste;
+		this->name = "사탕";
 	}
-	void set_name(string taste) {
-		cin >> form; "맛 사탕";
+
+	void show_info() {
+		cout << taste << "맛 " << name << endl;
 	}
 };
 
 class Chocolate : public Snack {
+	string shape;
 public:
-	string input;
-	Chocolate() {}
-	void set_form() {
-		cout << "모양을 입력하세요.";
-		cin >> input;
+	Chocolate(string shape){
+		this->shape = shape;
+		this->name = "초콜릿";
 	}
-	void set_name(string form) {
-		cin >> form; "모양 초콜릿";
+
+	void show_info() {
+		cout << shape << "모양" << name << endl;
 	}
 };
 
 	int main() {
-		vector<Snack*> Snacks = { new Snack, new Snack };
-		int num = 1;
-		Snack snackBasket[20];
-		if (num == !0) {
-			cout << "과자 바구니에 추가할 간식을 고르시오.(1: 사탕, 2: 초콜릿, 0: 종료) : ";
-			cin >> num;
-			if (num == 1) {
-				for (int i = 0; i < 20; i++) {
-					Chocolate set_taste;
-					snackBasket[i].get_name();
-				}
+		vector<Snack*> snack_basket;
+
+		while(1) {
+			int type;
+			cout << "과자 바구니에 추가할 간식을 고르시오(1:사탕, 2:초콜릿, 0:종료) : ";
+			cin >> type;
+			if (type == 1) {
+				string taste;
+				cout << "맛을 입력하세요. : ";
+				cin >> taste;
+				snack_basket.push_back(new Candy(taste));
 			}
-			if (num == 2) {
-				for (int i = 0; i < 20; i++) {
-					Chocolate set_form;
-					snackBasket[i].get_name();
-				}
+			else if (type == 2) {
+				string shape;
+				cout << "모양을 입력하세요. : ";
+				cin >> shape;
+				snack_basket.push_back(new Chocolate(shape));
 			}
-			cout << Snack::get_name();
+			else if (type == 0) {
+				break;
+			}
+			else {
+				cout << "0~2 사이의 숫자를 입력하세요." << endl;
+			}
+		}
+		cout << "과자 바구니에 담긴 간식의 개수는 " << Snack::get_count() << "개 입니다.\n";
+		cout << "과자 바구니에 담긴 간식 확인하기!\n";
+		for (Snack* snack : snack_basket){
+			snack->show_info();
 		}
 		return 0;
 	}

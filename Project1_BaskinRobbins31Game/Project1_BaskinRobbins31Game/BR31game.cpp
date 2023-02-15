@@ -14,9 +14,10 @@ int main() {
 			for (int i = num; i > 0; i--) {
 				count++;
 				cout << count << endl;
-				if (count >= 31) {
-					cout << "게임 종료!! 컴퓨터의 승리 입니다!!";
-				}
+			}
+			if (count >= 31) {
+				cout << "게임 종료!! 컴퓨터의 승리 입니다!!";
+				break;
 			}
 				int num = rand() % 3 + 1;
 				cout << "컴퓨터가 부른 숫자!\n";

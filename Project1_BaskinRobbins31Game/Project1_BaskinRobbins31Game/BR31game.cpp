@@ -6,11 +6,10 @@ int main() {
 	int count = 0;
 	int num = 0;
 	int a = 0;
-	string name;
+	string name = "사용자";
 	while (count < 31) {
-		if (num == 0 && a == 0) {
+		if (name == "사용자") {
 			name = "컴퓨터";
-			a = 1;
 			cout << "숫자를 입력해 주세요 : ";
 			cin >> num;
 			if (num == 0 && num > 4) {
@@ -18,14 +17,13 @@ int main() {
 			}
 			cout << "사용자가 입력한 숫자!\n";
 		}
-		else if (num == 0 && a == 1) {
+		else if (name == "컴퓨터") {
 			name = "사용자";
-			a = 0;
 			num = rand() % 3 + 1;
 			cout << "컴퓨터가 부른 숫자!\n";
 		}
 	    for (int i = num; i > 0; i--) {
-		count++, num--;
+		count++;
 		cout << count << endl;
 		    if (count == 31) {
 			    cout << "게임 종료!!" << name << "의 승리 입니다!!";

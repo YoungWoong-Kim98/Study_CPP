@@ -29,6 +29,7 @@ int main() {
 				}
 				if (j == 1 && count == 30) {
 					count = 31;
+					cout << "컴퓨터가 부른 숫자!\n";
 					cout << count << endl;
 					cout << "게임 종료!! 사용자의 승리 입니다!!";
 					break;

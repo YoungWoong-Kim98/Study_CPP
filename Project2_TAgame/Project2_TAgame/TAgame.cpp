@@ -3,27 +3,29 @@
 #include<ctime>
 using namespace std;
 int main(void) {
-	string word = "air";
-	string a,b;
-	int n = word.size();
+
+	string word;
+	string words = {"air"};
+	int ea = 0; ///개수
 	
-	cout << word;
 	while (1) {
-		string word = "air";
-		b = word[n - 1];
-		cout << "���� �ܾ �Է�";
+		int n = words.size();
+		cout << words << endl;
+		cout << "다음 단어를 입력하세요 : ";
 		clock_t startTime = clock();
 		cin >> word;
-		a = word[0];
-		if (a.compare(b) == 0)
-			cout << "000" << endl;
-
-		if (a.compare(b) == 1)
-			cout << "�߸��� �Է��Դϴ�." << endl;
-
 		clock_t endTime = clock();
 		if ((endTime - startTime) / CLOCKS_PER_SEC > 10) {
-			cout << "Ÿ�Ӿƿ�";
+			cout << "타임오버\n" << endl;
+			cout << "게임 종료!\n" << "총 입력한 단어 개수 : " << ea;
+			break;
+		}
+		else if (word[0] == words[n - 1]) {
+			words += " --> " + word;
+			ea++;
+		}
+		else {
+			cout << "잘못된 입력입니다." << endl;
 		}
 	}
 	return 0;

@@ -1,0 +1,3 @@
+﻿  소스.cpp
+C:\github\Study_CPP\Project3_RandomNum\Project3_RandomNum\소스.cpp(5,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Project3_RandomNum.vcxproj -> C:\github\Study_CPP\Project3_RandomNum\x64\Debug\Project3_RandomNum.exe

@@ -16,7 +16,7 @@ int main() {
 			for (num; num < 1; num) { 
 				cout << "숫자를 입력해 주세요 : ";
 				cin >> num;
-				if (num < 0 || num > 4) { // 1~3 외의 숫자 입력시 변수num에 0을 넣어 for문 반복
+				if (num < 1 || num > 3) { // 1~3 외의 숫자 입력시 변수num에 0을 넣어 for문 반복
 					cout << "1~3사이의 숫자를 입력해 주세요.\n";
 					num = 0; 
 				}

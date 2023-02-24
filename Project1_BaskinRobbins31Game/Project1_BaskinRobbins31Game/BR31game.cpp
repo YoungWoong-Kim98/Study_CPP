@@ -31,7 +31,7 @@ int main() {
 	    for (int i = num; i > 0; i--) { // 강사님께 확인전에는 사용자, 컴퓨터 각각 하나씩 작성하였으나 하나로 수정
 		count++;
 		cout << count << endl;
-		    if (count == 31) {
+		    if (count == 31) { // 카운중 31이되면 종료
 			    cout << "게임 종료!!" << name << "의 승리 입니다!!";
 				break;
 	     	}
